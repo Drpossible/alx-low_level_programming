@@ -1,12 +1,13 @@
 #include <stdio.h>
+#include <stdio.h>
 /**
- * description: main - prints out a string to stdout.
+ * main - Entry point
  *
- * return: 0 always (success)
- *
+ * Return: Always 0
  */
+
 int main(void)
 {
-puts("\"programming is like building a multilingual puzzle")
-return (0);
+	("\"programming is like building a multilingual puzzle")
+		return (0);
 }
