@@ -1,42 +1,32 @@
 #include <stdio.h>
- /**
-  * main - print three combination of numbers
-  *
-  * Return: Always (success)
-  */
+#include <stdlib.h>
+#include <time.h>
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0
+ */
+
 int main(void)
 {
-	int c, i, k, j;
+	int p, q;
 
-	for (c = 48; c <= 57; c++)
+	for (p = 0; p <= 98; p++)
 	{
-		for (i = 48; c <= 57; i++)
+		for (q = p + 1; q <= 99; q++)
 		{
-			for (k = 48; c <= 57; k++)
-			{
-				for (j = 48; c <= 57; j++)
-				{
-					if (((k + j) > (c + i) && k >= c) || c < k)
-					{
-						putchar(c);
-						putchar(i);
-						putchar(' ');
-						putchar(k);
-						putchar(j);
-						{
-							if (c + i + k + j == 227 && c == 57)
-						}
-						{
-						break;
-						}
-						else
-						{
-							putchar(',');
-							putchar(' ');
-						}
-					}
-				}
-			}
+			putchar((p / 10) + '0');
+			putchar((p % 10) + '0');
+			putchar(' ');
+			putchar((q / 10) + '0');
+			putchar((q % 10) + '0');
+
+			if (p == 98 && q == 99)
+				continue;
+
+			putchar(',');
+			putchar(' ');
 		}
 	}
 
