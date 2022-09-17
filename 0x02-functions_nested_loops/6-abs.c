@@ -1,9 +1,10 @@
 #include "main.h"
+
 /**
- * *abs - absolute value
- * @n: integer
- *
- * Return: return absolute value of a number
+ * _abs - check main
+ * @n: An intger input
+ * Description: This function returns absolute value of a number
+ * Return: Absolute value of number n
  */
 int _abs(int n)
 {
