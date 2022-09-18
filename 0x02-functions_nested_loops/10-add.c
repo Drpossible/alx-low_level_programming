@@ -1,11 +1,11 @@
 #include "main.h"
+
 /**
- * add - add two integers
- * @a: whole
- * @b: whole
- *
- *
- * Return: a + b
+ * add - check main
+ * @a: An integer a
+ * @b: An integer b
+ * Description: Function that adds two integers and returns the result
+ * Return: Result to add a and b
  */
 int add(int a, int b)
 {
