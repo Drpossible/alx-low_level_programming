@@ -22,8 +22,9 @@ int _sqrt_recursion(int n)
  */
 int _sqrt(int n, int x)
 {
-if (n > x / 2)
-return (-1);
-else if (n * n == x)
-return (n);
+	if (n > x / 2)
+		return (-1);
+	else if (n *n == x)
+		return (n);
+	return (_sqrt(n + 1, x));
 }
